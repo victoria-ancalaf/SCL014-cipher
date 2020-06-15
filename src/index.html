@@ -1,14 +1,70 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world! :D</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Naranja</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<!--Primera pantalla / Bienvenida-->    
+  <div class="welcomeTo" id="firstScreen"> 
+      <h1>Naranja</h1>
+        <br>
+        <label for="userName" class="whiteLetter">Ingresa tu nombre</label><br>
+        <input type="text" class="textContainer" id="userName" name="userName" placeholder="Canelita"><br>
+        <br>
+        <label for="userTelephone" class="whiteLetter">Número de teléfono</label><br>
+        <input type="text" class="textContainer" id="userTelephone" name="userTelephone" placeholder="+569 11223344"><br>    
+            <button type="button" class="enterBtn" id="buttonEnter">Entrar</button>
+  </div>   
+  
+<!--Segunda pantalla /mensajes cifrados -->
+  <div class="hideMe" id="secondScreen"> 
+      <br>
+      <h1>Esta sería la pantalla de los mensajes cifrados</h1>
+      <div>
+            <br> 
+            <label for="offset" class="smallLetter">Elige el número de desplazamiento</label>
+                <input list="offsets" name="offset" id="offset">
+                 <datalist id="offsets">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                    </datalist>
+                <input type="submit" class="offsetForm" value="OK">
+            <br>       
+            <button type="button" class="neeeext" id="buttonNext">Enviar</button>
+            <br>
+        </div>
+ </div>    
+
+<!--Tercera pantalla / Añadir contacto para enviar mensaje--> 
+ <div class="hideMe" id="newcontactScreen"> 
+    <br>
+    <h2>Agregar nuevo contacto</h2>
+    <br>
+    <label for="contactName" id="firstContact" class="grayLetter">Nombre</label><br>
+    <input type="text" class="contactContainer" id="contactName" name="contactName" placeholder="María Pérez"><br>
+    <br>
+    <label for="contactPhone" class="grayLetter">Teléfono</label><br>
+    <input type="text" class="contactContainer" id="contactPhone" name="contactPhone" placeholder="+569 55778899"><br>
+    <button type="button" class="listoBtn" id="buttonListo">Listo</button>
+</div>
+
+<!--Cuarta pantalla / Contactos guardados -->
+<div class="hideMe" id="contactScreen">
+    <br>
+    <h3 id="allContacts">Hola</h3>
+    <div class="saveContact" id="ContactOne">Contacto</div>
+    <div class="saveContact" id="ContactTwo"> </div>
+    <br>
+    <button type="button" class="addBtn" id="buttonadd">Añadir</button>
+</div>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
 </html>
