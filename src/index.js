@@ -1,4 +1,4 @@
-import cipher from './cipher.js';
+import { cipherEncode, cipherDecode } from './cipher.js';
 
 //console.log(cipher);
 
@@ -44,13 +44,8 @@ addContact.addEventListener("click", function(){
 )
 
 var buttonCifrarTexto = document.getElementById("cifrarTexto");
-buttonCifrarTexto.addEventListener("click", cipher);
+buttonCifrarTexto.addEventListener("click", cipherEncode);
 
 
-/*
-function setWelcomeToInNewContactScreen (nombreDeLaClase) {
-    newcontactScreen.className = nombreDeLaClase;
-}
-
-addContact.addEventListener("click", setWelcomeToInNewContactScreen("welcomeTo"))
-*/
+var buttonDescifrarTexto = document.getElementById("descifrarTexto");
+buttonDescifrarTexto.addEventListener("click", cipherDecode);
