@@ -1,6 +1,6 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
+//console.log(cipher);
 
 var enter = document.getElementById("buttonEnter");
 var fisrtScreen = document.getElementById("firstScreen");
@@ -28,7 +28,7 @@ var botonListo = document.getElementById("buttonListo");
 botonListo.addEventListener("click", function(){
 
 newcontactScreen.className ="hideMe";
-  contactScreen.className = "welcomeTo";
+contactScreen.className = "welcomeTo";
 
   var userName = document.getElementById("userName").value;
   var firstContact = document.getElementById("contactName").value;
@@ -42,3 +42,15 @@ addContact.addEventListener("click", function(){
   newcontactScreen.className ="welcomeTo";
 }
 )
+
+var buttonCifrarTexto = document.getElementById("cifrarTexto");
+buttonCifrarTexto.addEventListener("click", cipher);
+
+
+/*
+function setWelcomeToInNewContactScreen (nombreDeLaClase) {
+    newcontactScreen.className = nombreDeLaClase;
+}
+
+addContact.addEventListener("click", setWelcomeToInNewContactScreen("welcomeTo"))
+*/

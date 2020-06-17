@@ -25,9 +25,9 @@ h2 {
     margin-bottom: 8em;
     margin-right: 30em;
     margin-left: 30em;
-    /*background-color: #D4CED1;*/
-    background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 43%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-}
+    background-color: #D4CED1;
+    /*background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 43%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%); */
+} 
 
 .whiteLetter {
     font-family: "Roboto", sans-serif;
@@ -72,7 +72,8 @@ h2 {
     cursor: pointer;
 }
 
-.listoBtn { /*boton pequeño*/
+ /*boton pequeño*/
+.listoBtn {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     text-align: center;
