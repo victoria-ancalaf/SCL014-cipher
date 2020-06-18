@@ -1,3 +1,14 @@
+const cipher= {
+  encode: () => {
+
+  },
+  decode: () => {
+
+  }
+
+}
+
+
 const cipherEncode = () => {
   var originalMessage = document.getElementById("originalText").value;
   var offsetNumber = document.getElementById("desplazamiento").value;
@@ -47,4 +58,5 @@ const cipherDecode = () => {
   originalMessage.value = result;   
 }
 
-export { cipherEncode, cipherDecode } ;
+export default cipher;
+export {cipherEncode, cipherDecode};
