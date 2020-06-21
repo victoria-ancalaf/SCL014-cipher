@@ -1,74 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido a Naranja</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bienvenida a Sham</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
 
-<body>
-<!--Primera pantalla / Bienvenida-->    
-  <div class="welcomeTo" id="firstScreen"> 
-      <h1>Naranja</h1>
+    <body>
+        <!--Primera pantalla / Bienvenida-->    
+        <section class="welcomeTo" id="firstScreen" style="background-image:url('Images/pink-banner.jpg')">
         <br>
-        <label for="userName" class="whiteLetter">Ingresa tu nombre</label><br>
-        <input type="text" class="textContainer" id="userName" name="userName" placeholder="Canelita"><br>
+        <img src="Images/logo-nombre.png" alt="Sham" style="width:200px;height:100px;">
+        <h3>Calendario Menstrual de Ovulación</h3>
+            <label for="userName" class="pinkLetter">Ingresa tu nombre</label><br>
+            <input type="text" class="textContainer" id="userName" name="userName" placeholder="Ej: Canelita"><br>
         <br>
-        <label for="userTelephone" class="whiteLetter">Número de teléfono</label><br>
-        <input type="text" class="textContainer" id="userTelephone" name="userTelephone" placeholder="+569 11223344"><br>    
-            <button type="button" class="enterBtn" id="buttonEnter">Entrar</button>
-  </div>   
+            <label for="userTelephone" class="pinkLetter">Número de teléfono</label><br>
+            <input type="text" class="textContainer" id="userTelephone" name="userTelephone" placeholder="Ej: +569 11223344"><br>    
+                <button type="button" class="enterBtn" id="buttonEnter">Entrar</button>
+        </section><!--remplazar los div por section-->
   
-<!--Segunda pantalla /mensajes cifrados -->
-  <div class="hideMe" id="secondScreen"> 
-      <br>
-      <h1>Esta sería la pantalla de los mensajes cifrados</h1>
-      <div>
-            <br> 
-                <label for="originalText">Mensaje Original</label>
-                <textarea id="originalText" name="originalText" rows="4" cols="40"></textarea>
-                <br>
-                <label for="desplazamiento">Offset</label>
-                <input type="number" id="desplazamiento" name="desplazamiento" value="0">
-
-                <button type="button" class="neeeext" id="cifrarTexto">Codificar</button>
-                <button type="button" class="neeeext" id="descifrarTexto">Descifrar</button>
-                <br>
-                <label for="textoCifrado">Mensaje Cifrado</label>
-                <textarea id="textoCifrado" name="textoCifrado" rows="4" cols="40"></textarea>
-                <br>
-                <br>
-                
-            <br>       
-            <button type="button" class="neeeext" id="buttonNext">Enviar</button>
+  
+        <!--Segunda pantalla /mensajes cifrados -->
+        <main class="hideMe" id="secondScreen" style="background-image:url('Images/pink-banner.jpg')"> 
             <br>
-        </div>
- </div>    
+            <!--PopUP Instrucciones-->
+            <br>        
+            <button type="button" class="instructionBtn" id="btnInstructions">Instrucciones</button>
+                <div class="instructionsPopup" id="instructions">
+                    <button type="button" class="btnExit" id="btnClose">Cerrar</button>
+                     <h1>Instrucciones App</h1>       
+                </div>
+            <!--Sección de los mensajes-->
+                <br>
+                <br> 
+                <br>
+                <br> 
+                    <!--<label for="originalText">Mensaje Original</label> -->
+                    <textarea id="originalText" class="textBoxOne" name="originalText" rows="7" cols="40" placeholder="Escribe tu mensaje aquí..."></textarea> <!-- modificar para que la pantalla de texto no se mueva-->
+                <br>
+                    <button type="button" class="btnTranslate" id="cifrarTexto">Codificar</button>
+                    <input type="number" id="desplazamiento" name="desplazamiento" value="0" class="btnOffset">
+                    <button type="button" class="btnTranslate" id="descifrarTexto">Descifrar</button>
+                <br>
+                   <!-- <label for="textoCifrado">Mensaje Cifrado</label>-->
+                    <textarea id="textoCifrado" class="textBoxTwo" name="textoCifrado" rows="7" cols="40" readonly placeholder="Mensaje codificado/decodificado"></textarea> 
+                <br> 
+                    <button type="button" class="copybtn" id ="copy">Copiar</button>      
+                <br>
+                    <button type="button" class="sendMsg" id="buttonNext">Enviar mensaje</button>
+        </main>           
 
-<!--Tercera pantalla / Añadir contacto para enviar mensaje--> 
- <div class="hideMe" id="newcontactScreen"> 
-    <br>
-    <h2>Agregar nuevo contacto</h2>
-    <br>
-    <label for="contactName" id="firstContact" class="grayLetter">Nombre</label><br>
-    <input type="text" class="contactContainer" id="contactName" name="contactName" placeholder="María Pérez"><br>
-    <br>
-    <label for="contactPhone" class="grayLetter">Teléfono</label><br>
-    <input type="text" class="contactContainer" id="contactPhone" name="contactPhone" placeholder="+569 55778899"><br>
-    <button type="button" class="listoBtn" id="buttonListo">Listo</button>
-</div>
+        <!--Tercera pantalla / Añadir contacto para enviar mensaje--> 
+            <section class="hideMe" id="newcontactScreen" style="background-image:url('Images/pink-banner.jpg')"> 
+                <br>
+                    <h2>Agregar nuevo contacto</h2>
+                <br>
+                    <label for="contactName" id="firstContact" class="grayLetter">Nombre</label><br>
+                        <input type="text" class="contactContainer" id="contactName" name="contactName" placeholder="Ej: María Pérez"><br>
+                <br>
+                    <label for="contactPhone" class="grayLetter">Teléfono</label><br>
+                        <input type="text" class="contactContainer" id="contactPhone" name="contactPhone" placeholder="Ej. +569 55778899"><br>
+                    <button type="button" class="listoBtn" id="buttonListo">Listo</button>
+            </section>
 
-<!--Cuarta pantalla / Contactos guardados -->
-<div class="hideMe" id="contactScreen">
-    <br>
-    <h3 id="allContacts">Hola</h3>
-    <div class="saveContact" id="ContactOne">Contacto</div>
-    <div class="saveContact" id="ContactTwo"> </div>
-    <br>
-    <button type="button" class="addBtn" id="buttonadd">Añadir</button>
-</div>
-
-</body>
-<script type="module" src="index.js"></script>
+        <!--Cuarta pantalla / Contactos guardados -->
+            <section class="hideMe" id="contactScreen" style="background-image:url('Images/pink-banner.jpg')">
+                <br>
+            <h3 id="allContacts">Hola</h3>
+                <div class="saveContact" id="ContactOne">Contacto</div>
+                <div class="saveContact" id="ContactTwo"> </div>
+            <br>
+                <button type="button" class="addBtn" id="buttonadd">Añadir</button>
+            </section>
+        </body>
+    <script type="module" src="index.js"></script>
 </html>
