@@ -12,7 +12,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
-    color: #FFE6B3;
+    color: #e65151;
   }
 
   h3 {
@@ -41,12 +41,6 @@ body {
     font-size: 1em;
   }
   
-  .grayLetter {
-    font-family: "Roboto", sans-serif;
-    color: rgb(99, 96, 96);
-    font-style: normal;
-    font-size: 1.3em;
-  } 
 /* Campo donde se ingresa nombre de usuario y teléfono*/  
   .textContainer {
     position: center;
@@ -91,10 +85,11 @@ body {
     padding: 1em;
     width: 5em;
     height: 2.5em;
-    background: #FAC43B;
+    background: #d63434;
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    color:white;
   }
   
   .hideMe {
@@ -135,29 +130,14 @@ body {
     margin-top: 4em;
     margin-bottom: 5em;
     margin-right: 10em;
-    margin-left: 7em;
+    margin-left: 6em;
+    border-radius: 7%;
     border: none;
     text-align: center;
     font-size: medium;
+    background-color: #f7d2d2;
   }
  
-  /*Botón para agregar contactos nuevos*/
-  .addBtn {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1em;
-    line-height: 0.2em;
-    margin: 1em;
-    padding: 1em;
-    width: 5em;
-    height: 2.5em;
-    background: #FAC43B;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-  }
-
   /* Botón de Cifrar y Descifrar */
     .btnTranslate { 
     box-shadow: 3px 4px 0px 0px #899599;
@@ -177,25 +157,10 @@ body {
 }
 
 /* Botón del copiado de texto en el portapapeles */
-    .copybtn {
-    font-family: "Roboto", sans-serif;
-    font-size: small;
-    line-height: 0.2em;
-    margin-top: 0em;
-    padding: 1em;
-    width: 5em;
-    height: 1.5em;
-    background: #fbcbcb;
-    border-style: ridge;
-    border-color: #f08080;
-    cursor: pointer;
-  }
-
- /*Creo que esto no lo estamos ocupando*/ 
-  .offsetForm {
-    font-family: "Roboto", sans-serif;
-    background-color: #FAC43B;
-  }
+.copyText{
+  margin-right: -7em;
+  margin-left: 4em;
+}
 
  /*Botón para enviar el mensaje*/ 
   .sendMsg {
@@ -262,6 +227,7 @@ body {
   width: 8em;
   height: 3em;
   margin-right: -23em;
+  margin-left: 8em;
   text-align: center;
   font-size: x-small;
   border-radius: 56%;
@@ -277,7 +243,7 @@ body {
   margin-top: -2em;
   border: .5em solid #f08080;
   height: 32em;
-  width: 19em;
+  width: 19.5em;
   background-color: #f5cece;
 }
 
@@ -290,4 +256,70 @@ body {
 .btnExit:hover {
   background-color: tomato;
   color: white;
+}
+
+/* Icono calendario*/
+.calendar {
+  margin-right: 1em;
+  margin-left: -16em;
+}
+
+/* Icono contactos*/
+.contactLogo {
+  margin-right: 1em;
+}
+
+/* Icono borrar mensaje*/
+.erase{
+  margin-top: 0em;
+  margin-left: -7em;
+}
+
+/* Icono copiar mensaje*/
+.copyText{
+  margin-right: -7em;
+  margin-left: 4em;
+}
+
+/*Mensaje final*/
+.finalText {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  color: #f3f3f3;
+  background-color: #e77e7e;
+  width: 16em;
+  height: 5em;
+  line-height: 1em;
+  margin: 3em;
+  border-radius: 5%;
+  text-align: center;
+  ;
+}
+
+.backBtn {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: x-small;
+  line-height: 0.2em;
+  margin-right: 25em;
+  padding: 1em;
+  width: 5em;
+  height: 2em;
+  background:white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #d63434;
+}
+
+/*instrucciones*/
+.listInstrucciones{
+  color: #e87272;
+  position: absolute;
+  margin:2px;
+  /*margin-left: -1em;*/
+  width: 300px;
+  padding: 10px;
+  font-size: small;
 }
