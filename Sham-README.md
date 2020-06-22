@@ -12,3 +12,7 @@ El objetivo de Sham es entregar una herramienta de comunicación discreta, que p
  - El primer prototipo que diseñamos tenía tematica de una fruta, cuando el usuario no estaba definido, ya que iba a ser utilizado por cualquier persona.
 https://sandydas654238.invisionapp.com/console/cipher-narancia-ckbb3eixl0dpm019lugk45lro/ckbb5fw710dn601752y9uhpjh/play
 
+- Luego creamos un diseño con colores pasteles para empezar a disfrazar la aplicación.
+
+- Finalmente, cuando decidimos el usuario principal, el diseño con tonalidades rosadas lo utilizamos para simular una aplicación de calendario menstrual.
+
